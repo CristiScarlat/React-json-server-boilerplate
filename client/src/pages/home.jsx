@@ -1,12 +1,10 @@
 import React from 'react';
-import CustomButton from '../components/customButton';
-
+import Carusel from '../components/caruselComponent/caruselComponent';
 
 const Home = () => {
     return (
     <div>
-        Home
-        <CustomButton />
+        <Carusel />
     </div>
     )
 }
