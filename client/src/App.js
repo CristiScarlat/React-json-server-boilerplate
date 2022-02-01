@@ -1,20 +1,12 @@
 import React from 'react'
 import './App.scss';
+import Home from './pages/home';
 
 function App() {
 
-  React.useEffect(() => {
-    document.addEventListener('keypress', keypressHandler)
-    return () => document.removeEventListener('keypress', keypressHandler)
-  }, [])
-
-  const keypressHandler = (key) => {
-    console.log(key)
-  }
-
   return (
     <div className="App">
-      app
+      <Home/>
     </div>
   );
 }

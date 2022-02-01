@@ -25,5 +25,16 @@
   },
   "users": {
     "id": 3
+  },
+  "questions":{
+    "1": {
+      "q": "nkanmsdkasknsad?",
+      "correctAnswer": ["a", "b"],
+      "answers": {
+        "a": "asdad",
+        "b": "asdasd",
+        "c": "fdghjk"
+      }
+    }
   }
 }
