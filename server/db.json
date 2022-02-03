@@ -36,5 +36,22 @@
         "c": "fdghjk"
       }
     }
-  }
+  },
+  "cities": [
+    {
+      "cityName": "Zalau",
+      "description": "bkbajsbdbkasbd",
+      "images": ["primaria_zalau.jpg"]
+    },
+    {
+      "cityName": "Salonta",
+      "description": "bkbajsbdbkasbd",
+      "images": ["hotel-slavia-salonta.jpg"]
+    },
+    {
+      "cityName": "Timisoara",
+      "description": "bkbajsbdbkasbd",
+      "images": ["TimisoaraPiataUnirii.jpg"]
+    }
+  ]
 }
