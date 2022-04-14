@@ -5,9 +5,9 @@ const instance = axios.create ({
     headers: {'Accept': 'application/json'}
   })
 
-async function getProducts(){
+async function getProducts(productType){
     try{
-        const res = await instance.get('/products');
+        const res = await instance.get(productType);
         return res.data
     } 
     catch(error){

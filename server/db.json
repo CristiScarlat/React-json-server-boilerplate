@@ -1,40 +1,34 @@
 {
-  "products": {
-    "cosmetics": [
-      {
-        "lipstick": {
-          "price": "10ron",
-          "description": "blabla",
-          "thumbnail": "lipstick-red.jpg"
-        },
-        "eyeliner": {
-          "price": "20ron",
-          "description": "blabla",
-          "thumbnail": "eyeliner.jpg"
-        }
-      }
-    ],
-    "healthy-food": {
-      "id": 1
+  "products-cosmetics": [
+    {
+      "name": "lipstick",
+      "price": "10ron",
+      "description": "blabla",
+      "thumbnail": "lipstick-red.jpg"
     },
-    "accessories": {
-      "names": [
-        "blabla"
-      ]
+    {
+      "name": "eyeliner",
+      "price": "20ron",
+      "description": "blabla",
+      "thumbnail": "eyeliner.jpg"
     }
-  },
-  "users": {
-    "id": 3
-  },
-  "questions":{
-    "1": {
-      "q": "nkanmsdkasknsad?",
-      "correctAnswer": ["a", "b"],
-      "answers": {
-        "a": "asdad",
-        "b": "asdasd",
-        "c": "fdghjk"
+  ],
+  "healthy-food": [
+    {
+        "name": "salad",
+        "price": "10ron",
+        "description": "blabla",
+        "thumbnail": "salad.jpg"
+      },
+      { "name": "vegetarian-burger",
+        "price": "20ron",
+        "description": "blabla",
+        "thumbnail": "vegetarian-burger.jpg"
       }
-    }
+  ],
+  "accessories": {
+    "names": [
+      "blabla"
+    ]
   }
 }
