@@ -1,19 +1,19 @@
 import axios from 'axios'
 
 const instance = axios.create ({
-    baseURL : 'http://localhost:5000/',
+    baseURL : 'https://api.tvmaze.com',
     headers: {'Accept': 'application/json'}
   })
 
-async function getProducts(){
+const searchShows = async (querySearch) => {
     try{
-        const res = await instance.get('/products');
-        return res.data
-    } 
+        const res = await instance.get(`/search/shows?q=${querySearch}`)
+        return res;
+    }
     catch(error){
-        throw new Error(error)
+        console.log(error)
     }
 }
 
 
-export { getProducts }
+export { searchShows }
