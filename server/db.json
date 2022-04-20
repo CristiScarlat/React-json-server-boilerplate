@@ -26,9 +26,22 @@
         "thumbnail": "vegetarian-burger.jpg"
       }
   ],
-  "accessories": {
-    "names": [
-      "blabla"
-    ]
-  }
+  "carousel": [
+    {
+      "path": "images/carousel/c1.jpg",
+      "name": "c1"
+    },
+    {
+      "path": "images/carousel/c2.jpg",
+      "name": "c2"
+    },
+    {
+      "path": "images/carousel/c3.jpg",
+      "name": "c3"
+    },
+    {
+      "path": "images/carousel/c4.jpg",
+      "name": "c4"
+    }
+  ]
 }

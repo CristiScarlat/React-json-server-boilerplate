@@ -1,27 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Carusel from '../components/caruselComponent/caruselComponent';
-import { getProducts } from '../services/api';
-import { useProducts } from '../customHooks/useServices';
+import { getProducts, getCarouselImages } from '../services/api';
+import './pages.css';
 
 const Home = () => {
 
-    const { loading, data } = useProducts();
+    const [ carouselImgs, setCarouselImgs ] = useState([]);
+
     useEffect(() => {
         getProducts('products-cosmetics')
-        .then(res => {
-            console.log(res)
-        })
-        .catch(err => console.log(err))
+            .then(res => {
+                console.log(res)
+            })
+            .catch(err => console.log(err))
+
+        getCarouselImages()
+            .then(res => {
+                setCarouselImgs(res.data)
+            })
+            .catch(err => console.log(err))
     }, [])
 
-
-    console.log(loading, data)
+    console.log("carousel-img", carouselImgs)
 
     return (
-    <div>
-        <Carusel />
-        {/* {!loading ? JSON.stringify(data) : '...loading'} */}
-    </div>
+        <div className="m-3">
+            <div className="carousel-container">{carouselImgs.length > 0 && <Carusel imgs={carouselImgs}/>}</div>
+            <div>
+                
+            </div>
+        </div>
     )
 }
 

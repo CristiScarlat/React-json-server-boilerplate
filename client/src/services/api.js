@@ -11,9 +11,19 @@ async function getProducts(productType){
         return res.data
     } 
     catch(error){
-        throw new Error(error)
+        console.log(error)
+    }
+}
+
+async function getCarouselImages() {
+    try{
+        const res = await instance.get("/carousel");
+        return res;
+    }
+    catch(error){
+        console.log(error)
     }
 }
 
 
-export { getProducts }
+export { getProducts, getCarouselImages }
